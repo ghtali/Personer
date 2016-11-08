@@ -1,5 +1,5 @@
 
-public abstract class Ansat extends Person {
+public class Ansat extends Person {
 		private String institut;
 		
 		public Ansat(String navn, String institut){
