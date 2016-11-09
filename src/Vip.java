@@ -7,6 +7,7 @@ public class Vip extends Ansat {
 		
 		this.kurser = new int[kurser.length];
 		for (int i=0; i< kurser.length; i++){
+			this.kurser[i] = kurser[i];
 			
 		}
 		
