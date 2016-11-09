@@ -9,5 +9,13 @@ public class Ansat extends Person {
 		public String toString(){
 			return super.toString() +"\tInstitut: \t"+institut;
 		}
+		public String getInstitut(){
+			return institut;
+		}
+		public void setInstitut(String institut){
+			this.institut = institut;
+		}
+		
+		
 	
 }
