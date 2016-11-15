@@ -1,40 +1,36 @@
 
 public class Vip extends Ansat{
-	private int[] kurser;
+	private String[] kurser;
 
-	public Vip(String navn, String institut, int[] kurser){
+	public Vip(String navn, String institut, String[] kurser){
 		super(navn, institut);
 
-		this.kurser = new int[kurser.length];
-		for (int i=0; i< kurser.length; i++){
-			this.kurser[i] = kurser[i];	
+		if(!(kurser.length>4))
+			this.kurser=kurser;	
+	}
+	
+	public String kurserAsString(){
+		StringBuilder builder = new  StringBuilder();
+		for(int i=0; i < kurser.length;i++ ){
+			builder.append("[kursus=").append("").append(kurser[i]).append("]\t");
+		}
+		return builder.toString();
+	}
+		public String[] getKurser() {
+			return kurser;
 		}
 
-
-	    private String kurserAsString(){
-	        String res="";
-	        for (int i=0; i < kurser.length; i++){
-	        	if(i!=0)
-	        		res += " ";
-	        	res += kurser[i];
-	        }
-	        return res;
-	    }
-
-//		public int[] getKurser() {
-//			return kurser;
-//		}
-//
-//		public void setKurser(int[] kurser) {
-//			this.kurser = kurser;
-//		}
+		public void setKurser(String[] kurser) {
+			this.kurser = kurser;
+		}
 		
 		public String toString()
 		{
-			return super.toString()+"\n\t[kursus="+kurser+"]"; //For alle kurser!
+//			return super.toString()+"class Vip\n\t[kursus="+kurserAsString()+"]"; //For alle kurser!
+			return "class Vip\n\t[navn="+navn+"]"+"\n\t"+"[institutnavn="+super.getInstitut()+"]"+"\n\t"+kurserAsString();
 		}
 
-	}
+	
 
 
 }

@@ -9,7 +9,7 @@ public class Tap extends Ansat {
 
 		
 		public String toString() {
-			return super.toString() + "\n\tArbejdstid: " + arbejdstid;
+			return "class Tap\n\t[navn="+navn+"]"+"\n\t"+"[institutnavn="+super.getInstitut()+"]"+"\n\t"+"["+"arbejdstid=" + arbejdstid+"]";
 		}
 		
 

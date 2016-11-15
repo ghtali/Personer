@@ -1,15 +1,14 @@
 
 public class Person {
 	
-
-    private String navn;
+    protected String navn;
 
     public Person(String navn){
         this.navn = navn;
     }
     
     public String toString(){
-        return "Navn: \t"+navn;
+        return "class Person\n\t[navn="+navn+"]";
     }
 
 

@@ -7,7 +7,8 @@ public class Studerende extends Person {
 		this.studienummer = studienummer;
 	}
 	public String toString(){
-		return super.toString() + "\n\t[studienummer="+studienummer+"]";
+//		return super.toString() + "\n\t[studienummer="+studienummer+"]";
+		return "class Studerende\n\t[navn="+navn+"]"+"\n\t[studienummer="+studienummer+"]";
 	}
 	public String getStudienummer() {
 		return studienummer;

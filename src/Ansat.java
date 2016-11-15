@@ -7,7 +7,7 @@ public class Ansat extends Person {
 			this.institut = institut;
 		}
 		public String toString(){
-			return super.toString() +"\tInstitut: \t"+institut;
+			return "class Ansat\n\t[navn="+navn+"]"+"\n\t[institutnavn="+institut+"]";
 		}
 		public String getInstitut(){
 			return institut;
